@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>SOGO DESIGN Co.,Ltd.</title>
+    <script>
+    $(function() {
+        $(".menu_sub").hide();   
+		$(".menu_main > li").hover(function() {
+            $(".menu_sub:not(:animated)",this).slideDown();
+        },
+		function() {
+            $(".menu_sub",this).slideUp();
+        });
+    });
+    </script>
+    <script>
+    var blouseIndex=0;
+    $(function() {
+        showBlouse(blouseIndex);
+    });
+    function moveBlouse(n) {
+        blouseIndex=blouseIndex+n
+        showBlouse(blouseIndex);
+    }
+    function showBlouse(n) {
+        var blouse=document.getElementsByClassName("product_blouse");
+        var size=blouse.length;
+    if ((n+1)>size) {
+        blouseIndex=0; n=0;
+    } else if (n<0) {
+        blouseIndex=(size-1);
+        n=(size-1);
+    }
+    for (i=0; i<blouse.length; i++) {
+        blouse[i].style.display="none";
+    }
+    blouse[n].style.display = "block";
+    }
+    </script>
+    <script>
+    var coatIndex=0;
+    $(function() {
+        showCoat(coatIndex);
+    });
+    function moveCoat(n) {
+        coatIndex=coatIndex+n
+        showCoat(coatIndex);
+    }
+    function showCoat(n) {
+        var coat=document.getElementsByClassName("product_coat");
+        var size=coat.length;
+    if ((n+1)>size) {
+        coatIndex=0; n=0;
+    } else if (n<0) {
+        coatIndex=(size-1);
+        n=(size-1);
+    }
+    for (i=0; i<coat.length; i++) {
+        coat[i].style.display="none";
+    }
+    coat[n].style.display = "block";
+    }
+    </script>
+    <script>
+    var dressIndex=0;
+    $(function() {
+        showDress(dressIndex);
+    });
+    function moveDress(n) {
+        dressIndex=dressIndex+n
+        showDress(dressIndex);
+    }
+    function showDress(n) {
+        var dress=document.getElementsByClassName("product_dress");
+        var size=dress.length;
+    if ((n+1)>size) {
+        dressIndex=0; n=0;
+    } else if (n<0) {
+        dressIndex=(size-1);
+        n=(size-1);
+    }
+    for (i=0; i<dress.length; i++) {
+        dress[i].style.display="none";
+    }
+    dress[n].style.display = "block";
+    }
+    </script>
+    <script>
+    var jacketIndex=0;
+    $(function() {
+        showJacket(jacketIndex);
+    });
+    function moveJacket(n) {
+        jacketIndex=jacketIndex+n
+        showJacket(jacketIndex);
+    }
+    function showJacket(n) {
+        var jacket=document.getElementsByClassName("product_jacket");
+        var size=jacket.length;
+    if ((n+1)>size) {
+        jacketIndex=0; n=0;
+    } else if (n<0) {
+        jacketIndex=(size-1);
+        n=(size-1);
+    }
+    for (i=0; i<jacket.length; i++) {
+        jacket[i].style.display="none";
+    }
+    jacket[n].style.display = "block";
+    }
+    </script>
+    <script>
+    var paddingIndex=0;
+    $(function() {
+        showPadding(paddingIndex);
+    });
+    function movePadding(n) {
+        paddingIndex=paddingIndex+n
+        showPadding(paddingIndex);
+    }
+    function showPadding(n) {
+        var padding=document.getElementsByClassName("product_padding");
+        var size=padding.length;
+    if ((n+1)>size) {
+        paddingIndex=0; n=0;
+    } else if (n<0) {
+        paddingIndex=(size-1);
+        n=(size-1);
+    }
+    for (i=0; i<padding.length; i++) {
+        padding[i].style.display="none";
+    }
+    padding[n].style.display = "block";
+    }
+    </script>
+    <script>
+    var pantsIndex=0;
+    $(function() {
+        showPants(pantsIndex);
+    });
+    function movePants(n) {
+        pantsIndex=pantsIndex+n
+        showPants(pantsIndex);
+    }
+    function showPants(n) {
+        var pants=document.getElementsByClassName("product_pants");
+        var size=pants.length;
+    if ((n+1)>size) {
+        pantsIndex=0; n=0;
+    } else if (n<0) {
+        pantsIndex=(size-1);
+        n=(size-1);
+    }
+    for (i=0; i<pants.length; i++) {
+        pants[i].style.display="none";
+    }
+    pants[n].style.display = "block";
+    }
+    </script>
+    <script>
+    var skirtIndex=0;
+    $(function() {
+        showSkirt(skirtIndex);
+    });
+    function moveSkirt(n) {
+        skirtIndex=skirtIndex+n
+        showSkirt(skirtIndex);
+    }
+    function showSkirt(n) {
+        var skirt=document.getElementsByClassName("product_skirt");
+        var size=skirt.length;
+    if ((n+1)>size) {
+        skirtIndex=0; n=0;
+    } else if (n<0) {
+        skirtIndex=(size-1);
+        n=(size-1);
+    }
+    for (i=0; i<skirt.length; i++) {
+        skirt[i].style.display="none";
+    }
+    skirt[n].style.display = "block";
+    }
+    </script>
+    <script>
+    var vestIndex=0;
+    $(function() {
+        showVest(vestIndex);
+    });
+    function moveVest(n) {
+        vestIndex=vestIndex+n
+        showVest(vestIndex);
+    }
+    function showVest(n) {
+        var vest=document.getElementsByClassName("product_vest");
+        var size=vest.length;
+    if ((n+1)>size) {
+        vestIndex=0; n=0;
+    } else if (n<0) {
+        vestIndex=(size-1);
+        n=(size-1);
+    }
+    for (i=0; i<vest.length; i++) {
+        vest[i].style.display="none";
+    }
+    vest[n].style.display = "block";
+    }
+    </script>
+</head>
+<body>
+    <nav class="menu">
+        <a class="menu_index" href="index.html">(주) 소고디자인</a>
+        <ul class="menu_main">
+            <li><a href="#">회사소개</a>
+                <ul class="menu_sub">
+                    <li><a href="history.html">주요연혁</a></li>
+                    <li><a href="salutation.html">인사말</a></li>
+                    <li><a href="location.html">오시는 길</a></li>
+                </ul>
+            </li>
+            <li><a href="#">사업분야</a>
+                <ul class="menu_sub">
+                    <li><a href="product.html">주요제품</a></li>
+                    <li><a href="growth.html">성장현황</a></li>
+                    <li><a href="partner.html">협력사</a></li>
+                </ul>
+            </li>
+            <li><a href="#">PR룸</a>
+                <ul class="menu_sub">
+                    <li><a href="publicize.html">홍보자료</a></li>
+                    <li><a href="#">언론보도</a></li>
+                </ul>
+            </li>
+            <li><a href="#">고객센터</a>
+                <ul class="menu_sub">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">고객게시판</a></li>
+                    <li><a href="#">문의사항</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="product">
+        <div class="product_main">
+            <div class="product_list">
+                <div class="product_ment">
+                    <h1>시장 조사</h1>
+                    <p>철저한 수요 예측과 시즌별 트랜드 분석을 통해<br>
+                    감각적이고 세련된 패션 전문 디자이너가<br>
+                    디자인 제작을 기획하고 진행합니다.</p>
+                </div>
+                <div class="product_ment">
+                    <h1>품질 확보 활동</h1>
+                    <p>나의 가족, 나의 소중한 사람이 입는 옷처럼<br>
+                    생산 공장 내 3정 5S 및 4M 관리를 바탕으로<br> 
+                    품질 확보 공정을 위해 노력합니다.</p>
+                </div>
+                <div class="product_ment">
+                    <h1>신속 정확 운송</h1>
+                    <p>생산이 완료되면 자사 물류센터로 이동되어<br>
+                    입고 상태를 확인 후 선입선출의 원칙 아래<br>
+                    각 지점 점포 필요량에 맞춰 정확히 분출합니다.</p>
+                </div>
+            </div>
+            <div class="product_list">
+                <div class="product_item">
+                    <img class="product_blouse" src="img/product/blouse_1.png">
+                    <img class="product_blouse" src="img/product/blouse_2.png">
+                    <img class="product_blouse" src="img/product/blouse_3.png">
+                    <img class="product_blouse" src="img/product/blouse_4.png">
+                    <a class="product_prev" onclick="moveBlouse(-1)">&#10094;</a>
+                    <a class="product_next" onclick="moveBlouse(1)">&#10095;</a>
+                    <p class="product_name">Blouse</p>
+                </div>
+                <div class="product_item">
+                    <img class="product_coat" src="img/product/coat_1.png">
+                    <img class="product_coat" src="img/product/coat_2.png">
+                    <img class="product_coat" src="img/product/coat_3.png">
+                    <img class="product_coat" src="img/product/coat_4.png">
+                    <a class="product_prev" onclick="moveCoat(-1)">&#10094;</a>
+                    <a class="product_next" onclick="moveCoat(1)">&#10095;</a>
+                    <p class="product_name">Coat</p>
+                </div>
+                <div class="product_item">
+                    <img class="product_dress" src="img/product/dress_1.png">
+                    <img class="product_dress" src="img/product/dress_2.png">
+                    <img class="product_dress" src="img/product/dress_3.png">
+                    <img class="product_dress" src="img/product/dress_4.png">
+                    <a class="product_prev" onclick="moveDress(-1)">&#10094;</a>
+                    <a class="product_next" onclick="moveDress(1)">&#10095;</a>
+                    <p class="product_name">Dress<br>One-Piece</p>
+                </div>
+                <div class="product_item">
+                    <img class="product_jacket" src="img/product/jacket_1.png">
+                    <img class="product_jacket" src="img/product/jacket_2.png">
+                    <img class="product_jacket" src="img/product/jacket_3.png">
+                    <img class="product_jacket" src="img/product/jacket_4.png">
+                    <a class="product_prev" onclick="moveJacket(-1)">&#10094;</a>
+                    <a class="product_next" onclick="moveJacket(1)">&#10095;</a>
+                    <p class="product_name">Jacket<br>Jumper</p>
+                </div>
+            </div>
+            <div class="product_list">
+                <div class="product_item">
+                    <img class="product_padding" src="img/product/padding_1.png">
+                    <img class="product_padding" src="img/product/padding_2.png">
+                    <img class="product_padding" src="img/product/padding_3.png">
+                    <img class="product_padding" src="img/product/padding_4.png">
+                    <a class="product_prev" onclick="movePadding(-1)">&#10094;</a>
+                    <a class="product_next" onclick="movePadding(1)">&#10095;</a>
+                    <p class="product_name">Padding</p>
+                </div>
+                <div class="product_item">
+                    <img class="product_pants" src="img/product/pants_1.png">
+                    <img class="product_pants" src="img/product/pants_2.png">
+                    <img class="product_pants" src="img/product/pants_3.png">
+                    <img class="product_pants" src="img/product/pants_4.png">
+                    <a class="product_prev" onclick="movePants(-1)">&#10094;</a>
+                    <a class="product_next" onclick="movePants(1)">&#10095;</a>
+                    <p class="product_name">Pants</p>
+                </div>
+                <div class="product_item">
+                    <img class="product_skirt" src="img/product/skirt_1.png">
+                    <img class="product_skirt" src="img/product/skirt_2.png">
+                    <img class="product_skirt" src="img/product/skirt_3.png">
+                    <img class="product_skirt" src="img/product/skirt_4.png">
+                    <a class="product_prev" onclick="moveSkirt(-1)">&#10094;</a>
+                    <a class="product_next" onclick="moveSkirt(1)">&#10095;</a>
+                    <p class="product_name">Skirt</p>
+                </div>
+                <div class="product_item">
+                    <img class="product_vest" src="img/product/vest_1.png">
+                    <img class="product_vest" src="img/product/vest_2.png">
+                    <img class="product_vest" src="img/product/vest_3.png">
+                    <img class="product_vest" src="img/product/vest_4.png">
+                    <a class="product_prev" onclick="moveVest(-1)">&#10094;</a>
+                    <a class="product_next" onclick="moveVest(1)">&#10095;</a>
+                    <p class="product_name">Vest</p>
+                </div>
+            </div>
+            <p>※ 위 사진은 자사 브랜드 제품의 일부분으로 전체 제품 및 상세 정보는 별도 요청 문의 바랍니다.</p>
+        </div>
+    </div>
+
+    <footer class="info">
+        <div class="info_address">
+            <p>본사 사무소 : 경기도 하남시 미시대로 520 A동 901호 &nbsp;&nbsp;|&nbsp;&nbsp; Tel. 02-773-5454~7 &nbsp;&nbsp;|&nbsp;&nbsp; Fax. 02-773-5458<br>
+            물류 사무소 : 경기도 광주시 회안대로 38-17 &nbsp;&nbsp;|&nbsp;&nbsp; Tel. 031-767-3985~6 &nbsp;&nbsp;|&nbsp;&nbsp; Fax. 031-767-3987<br>
+            상담 시간 : 평일 09:00 ~ 17:00 (토요일/일요일/공유일은 휴무입니다.)<br>
+            COPYRIGHT© 2021 SOGODESIGN CO.,Ltd ALL RIGHTS RESERVED</p>
+        </div>
+        <div class="info_link">
+            <a onclick="window.open('privacy.html', '_blank', 'left='+(screen.availWidth-1000)/2+',top='+
+                (screen.availHeight-800)/2+', width=1000px, height=800px')"><p>[ 개인정보처리방침 ]</p></a>
+        </div>
+    </footer>
+</body>
+</html>

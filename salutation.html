@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>SOGO DESIGN Co.,Ltd.</title>
+    <script>
+    $(function() {
+        $(".menu_sub").hide();   
+		$(".menu_main > li").hover(function() {
+            $(".menu_sub:not(:animated)",this).slideDown();
+        },
+		function() {
+            $(".menu_sub",this).slideUp();
+        });
+    });
+    </script>
+</head>
+<body>
+    <nav class="menu">
+        <a class="menu_index" href="index.html">(주) 소고디자인</a>
+        <ul class="menu_main">
+            <li><a href="#">회사소개</a>
+                <ul class="menu_sub">
+                    <li><a href="history.html">주요연혁</a></li>
+                    <li><a href="salutation.html">인사말</a></li>
+                    <li><a href="location.html">오시는 길</a></li>
+                </ul>
+            </li>
+            <li><a href="#">사업분야</a>
+                <ul class="menu_sub">
+                    <li><a href="product.html">주요제품</a></li>
+                    <li><a href="growth.html">성장현황</a></li>
+                    <li><a href="partner.html">협력사</a></li>
+                </ul>
+            </li>
+            <li><a href="#">PR룸</a>
+                <ul class="menu_sub">
+                    <li><a href="publicize.html">홍보자료</a></li>
+                    <li><a href="#">언론보도</a></li>
+                </ul>
+            </li>
+            <li><a href="#">고객센터</a>
+                <ul class="menu_sub">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">고객게시판</a></li>
+                    <li><a href="#">문의사항</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="salutation">
+        <p><img src="img/logo/sogodesign.png"><br>
+        소고디자인은 "<span style="color: rgb(150, 110, 80); font-size: 1.1em; font-weight: 600;">
+        자신을 창조해가는 자신감 넘치는 커리어 우먼 브랜드</span>"를<br>
+        모티브로 여성 캐쥬얼 패션 산업을 주도하고 있습니다.<br>
+        <br>
+        섬유, 의류, 패션 분야의 전략적 투자와 고객 만족 실현을 통해 인프라를<br>
+        확장하고 있으며 클래식 감성과 믹스매치가 가능한 <span style="color: rgb(150, 110, 80); font-size: 1.1em; font-weight: 600;">실용적인 아이템</span>을 주력으로<br>
+        디자인 컨셉부터 소재 차별화, 제품 관리에 이르기까지 통합적으로 운영하고 있습니다.<br>
+        <br>
+        더불어 철저한 준법경영을 통해 기업의 윤리적, 사회적 책임을 성실하게 수행하고<br>
+        <span style="color: rgb(150, 110, 80); font-size: 1.1em; font-weight: 600;">New Basic 유행에 따른 트렌드를 가미한 고품격 브랜드</span>
+        가 되도록 더욱 매진하겠습니다.<br>
+        <br>
+        고객의 만족을 위해 임직원 모두가 한 마음 한 뜻으로 노력할 것을 약속드립니다.<br>
+        언제나 변함없는 관심과 성원 부탁드립니다.<br>
+        감사합니다.</p>
+    </div>
+
+    <footer class="info">
+        <div class="info_address">
+            <p>본사 사무소 : 경기도 하남시 미시대로 520 A동 901호 &nbsp;&nbsp;|&nbsp;&nbsp; Tel. 02-773-5454~7 &nbsp;&nbsp;|&nbsp;&nbsp; Fax. 02-773-5458<br>
+            물류 사무소 : 경기도 광주시 회안대로 38-17 &nbsp;&nbsp;|&nbsp;&nbsp; Tel. 031-767-3985~6 &nbsp;&nbsp;|&nbsp;&nbsp; Fax. 031-767-3987<br>
+            상담 시간 : 평일 09:00 ~ 17:00 (토요일/일요일/공유일은 휴무입니다.)<br>
+            COPYRIGHT© 2021 SOGODESIGN CO.,Ltd ALL RIGHTS RESERVED</p>
+        </div>
+        <div class="info_link">
+            <a onclick="window.open('privacy.html', '_blank', 'left='+(screen.availWidth-1000)/2+',top='+
+                (screen.availHeight-800)/2+', width=1000px, height=800px')"><p>[ 개인정보처리방침 ]</p></a>
+        </div>
+    </footer>
+
+</body>
+</html>
